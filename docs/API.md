@@ -45,7 +45,7 @@ Body:
 ```json
 {
     "name": "<budget_name>",
-    "currency": "<budget_currency_abbreviation>",
+    "currency": "<budget_currency_abbreviation>"
 }
 ```
   
@@ -57,7 +57,7 @@ Body:
     "id": "<budget_id>",
     "name": "<budget_name>",
     "categories": [],
-    "currency": "<budget_currency_abbreviation>",
+    "currency": "<budget_currency_abbreviation>"
 }
 ```
 
@@ -93,7 +93,7 @@ Body:
 ```json
 {
     "name": "<budget_name>",
-    "currency": "<budget_currency_abbreviation>",
+    "currency": "<budget_currency_abbreviation>"
 }
 ```
   
