@@ -14,7 +14,7 @@ CREATE TABLE budgets_categories (
 
 CREATE TABLE budgets_categories_allocations (
     id CHAR(36) NOT NULL,
-    amount DECIMAL(65, 2) UNSIGNED NOT NULL,
+    amount DECIMAL(65, 2) NOT NULL,
     timestamp DATETIME NOT NULL,
     budget_id CHAR(36) NOT NULL,
     category_id CHAR(36) NOT NULL,
