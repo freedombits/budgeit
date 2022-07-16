@@ -1,5 +1,3 @@
-using BudgeIt.Application;
-using BudgeIt.Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,9 +9,6 @@ var builder = WebApplication.CreateBuilder(args);
             options.Authority = builder.Configuration.GetValue<string>("Jwt:Authority");
             options.RequireHttpsMetadata = builder.Environment.IsProduction();
         });
-
-    builder.Services.AddApplication(builder.Configuration, builder.Environment);
-    builder.Services.AddInfrastructure(builder.Configuration, builder.Environment);
 }
 
 var app = builder.Build();
